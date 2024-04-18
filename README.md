@@ -8,7 +8,7 @@ This is the repository for the paper AmbigDocs: Reasoning across Documents on Di
 We introduce AmbigDocs, a benchmark for testing the abilities of current LMs to distinguish confusing entity mentions and generate a cohesive answer. Single instance consists of a question asking about an ambiguous entity and a list of gold document-answer pairs for each disambiguated entity.
 
 ### Dataset Contents
-Download the data from [here](https://huggingface.co/datasets/yoonsanglee/AmbigDocs/tree/main) and place under [data](./data). Additionally, we use the Wikipedia snapshot from December 20th, 2018. Please place the documents (psgs_w100.tsv) in same directory, which can be downloaded from [DPR repo](https://github.com/facebookresearch/DPR).
+Download the data from [here](https://huggingface.co/datasets/yoonsanglee/AmbigDocs/tree/main) and place under [src/data](./src/data). Additionally, we use the Wikipedia snapshot from December 20th, 2018. Please place the documents (psgs_w100.tsv) in same directory, which can be downloaded from [DPR repo](https://github.com/facebookresearch/DPR).
 
 Each data instance consists of `question`, `ambiguous_entity`, `qid`, and a list of `documents`. Each element in `documents` consists of `title` which is a disambiguated entity, `text`, `pid` for referencing psgs_w100.tsv, and `answer`.
 
@@ -17,10 +17,10 @@ Each data instance consists of `question`, `ambiguous_entity`, `qid`, and a list
 pip install -r requirements.txt
 ```
 
-For evaluation, please place the necessary LMs under [models](./models). For generation, please place [question_converter-3b](https://huggingface.co/domenicrosati/question_converter-3b), [t5_xxl_true_nli_mixture](https://huggingface.co/google/t5_xxl_true_nli_mixture) under [models](./models).
+For evaluation, please place the necessary LMs under [src/models](./src/models). For generation, please place [question_converter-3b](https://huggingface.co/domenicrosati/question_converter-3b), [t5_xxl_true_nli_mixture](https://huggingface.co/google/t5_xxl_true_nli_mixture) under [models](./models).
 
 ### Dataset Generation
-For dataset generation, please refer to [generation](./generation) subdirectory.
+For dataset generation, please refer to [src/generation](./src/generation) subdirectory.
 
 ### Evaluation
 1. Executing below will run inference on test split. `mode` represents the following: 

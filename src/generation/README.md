@@ -1,7 +1,7 @@
 ### Dataset Generation
 Below explains the pipeline for generating AmbigDocs. We identify a surface name and a list of disambiguated entities from Wikipedia's disambiguation pages. We select two documents for generating a question and their corresponding answers. Subsequently, we gather additional answers from the remaining documents.
 
-![Generation](././assets/generation.png)  
+![Generation](../../assets/generation.png)  
 
 1. We first gather ambiguous entities and its disambiguations leveraging Wikipedia disambiguation pages. Executing below will use Wikipedia API to search through Wikipedia disambiguation pages and save the relationships between ambiguous entity and its disambiguations in a dictionary.
     ```
