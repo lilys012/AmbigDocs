@@ -1,0 +1,12 @@
+numpy
+openai
+peft
+torch==2.0.1
+tqdm
+transformers==4.36.2
+datasets
+trl
+bitsandbytes
+rouge_score
+sentencepiece
+protobuf
