@@ -17,7 +17,7 @@ Each data instance consists of `question`, `ambiguous_entity`, `qid`, and a list
 pip install -r requirements.txt
 ```
 
-For evaluation, please place the necessary LMs under [src/models](./src/models). For generation, please place [question_converter-3b](https://huggingface.co/domenicrosati/question_converter-3b), [t5_xxl_true_nli_mixture](https://huggingface.co/google/t5_xxl_true_nli_mixture) under [models](./models).
+For evaluation, please place the necessary LMs under [src/models](./src/models). For generation, please place [question_converter-3b](https://huggingface.co/domenicrosati/question_converter-3b), [t5_xxl_true_nli_mixture](https://huggingface.co/google/t5_xxl_true_nli_mixture) under [src/models](./models).
 
 ### Dataset Generation
 For dataset generation, please refer to [src/generation](./src/generation) subdirectory.
@@ -26,7 +26,7 @@ For dataset generation, please refer to [src/generation](./src/generation) subdi
 1. Executing below will run inference on test split. `mode` represents the following: 
 `1: Gold Only, 2: Gold+Retrieved, 3: Retrieved Only, 4: Few-shot` Put the name of the model you are using in `model`. If this contains "gpt", put openAPI key afterwards. Otherwise, put the model path to the argument.
     ```
-    python qa.py [mode] [model] [openAPI key/path_to_QA_model]
+    python qa.py [data_path] [mode] [model] [openAPI key/path_to_QA_model]
     ``` 
 
 2. Executing below will compute preliminary operations for computing Disambig-F1 score.
