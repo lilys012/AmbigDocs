@@ -1,6 +1,6 @@
 ## AmbigDocs: Reasoning across Documents on Different Entities under the Same Name
 
-[[Paper]](./) [[Homepage]](https://ambigdocs.github.io) [[Dataset]](https://huggingface.co/datasets/yoonsanglee/AmbigDocs/tree/main)
+[[Paper]](https://arxiv.org/abs/2404.12447) [[Homepage]](https://ambigdocs.github.io) [[Dataset]](https://huggingface.co/datasets/yoonsanglee/AmbigDocs/tree/main)
 
 ### Introduction
 This is the repository for the paper AmbigDocs: Reasoning across Documents on Different Entities under the Same Name.
@@ -51,5 +51,10 @@ python retrieval.py [path_to_gtr_wikipedia_index.pkl] [path_to_GTR_model] \
 ### Citations
 If you find our work helpful, please cite us as
 ```
-@article{ lee2024ambigdocs }
+@article{lee2024ambigdocs,
+    title={AmbigDocs: Reasoning across Documents on Different Entities under the Same Name},
+    author={Lee, Yoonsang and Ye, Xi and Choi, Eunsol},
+    journal={arXiv preprint arXiv:2404.12447},
+    year={2024}
+}
 ```
