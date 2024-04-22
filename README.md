@@ -1,9 +1,9 @@
-## AmbigDocs: Reasoning across Documents on Different Entities under the Same Name
+# AmbigDocs: Reasoning across Documents on Different Entities under the Same Name
 
 [[Paper]](https://arxiv.org/abs/2404.12447) [[Homepage]](https://ambigdocs.github.io) [[Dataset]](https://huggingface.co/datasets/yoonsanglee/AmbigDocs/tree/main)
 
 ### Introduction
-This is the repository for the paper AmbigDocs: Reasoning across Documents on Different Entities under the Same Name.
+This is the repository for the paper [AmbigDocs: Reasoning across Documents on Different Entities under the Same Name](https://arxiv.org/abs/2404.12447).
 
 We introduce AmbigDocs, a benchmark for testing the abilities of current LMs to distinguish confusing entity mentions and generate a cohesive answer. Single instance consists of a question asking about an ambiguous entity and a list of gold document-answer pairs for each disambiguated entity.
 
